@@ -5,6 +5,7 @@
 }
 html,body{
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 section{
@@ -17,6 +18,7 @@ section{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 100px;
 }
 header{
     position: absolute;
@@ -50,4 +52,103 @@ header .navigation{
     display: inline-block;
     color: #fff;
     margin-right: 40px;
+    text-decoration: none;
+}
+.navigation li a:hover{
+    color: #03a9f4;
+}
+.content{
+    max-width: 600px;
+}
+.contentbox h2{
+    font-size: 4em;
+    color: #fff;
+    line-height: 1em;
+    text-transform: capitalize;
+}
+.contentbox h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.contentbox p{
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.contentbox button{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #03a9f4;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-radius: 30px;
+}
+.contentbox button:hover{
+    background: #fff;
+    color: black;
+    box-shadow: 2px  3px solid #fff ;
+}
+.sci{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li a{
+    position: relative;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    
+}
+.sci li a:hover{
+    color: #03a9f4;
+}
+@media (max-width:991px){
+    header{
+        
+        padding: 15px 40px;
+    }
+    section{
+        padding: 40px;
+        background:url(bg.jpg) ;
+        background-size: cover;
+        background-position: center;
+    }
+    .contentbox h2{
+        font-size: 2.5em;
+
+    }
+    .contentbox p{
+        font-size: 1em;
+    }
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navigation li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    
 }
